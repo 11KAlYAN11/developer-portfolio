@@ -3,9 +3,9 @@ export const contactsData = {
     phone: '+91 XXXXX XXXXX',
     address: 'Bangalore, India',
     github: 'https://github.com/11KAlYAN11',
-    facebook: '',
+    facebook: 'https://github.com/11KAlYAN11',
     linkedIn: 'https://www.linkedin.com/in/asam-pavan-kumar-reddy/',
     twitter: 'https://twitter.com/xxxx',
-    stackOverflow: '',
+    stackOverflow: 'https://github.com/11KAlYAN11',
     devUsername: "11KAlYAN11"
 }

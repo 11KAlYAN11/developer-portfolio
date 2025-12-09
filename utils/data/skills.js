@@ -5,7 +5,6 @@ export const skillsData = [
   'Spring MVC',
   'Python',
   'C',
-  'C++',
   'JavaScript',
   'TypeScript',
   'React',
