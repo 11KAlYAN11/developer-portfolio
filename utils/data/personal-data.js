@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Asam Pavan Kumar Reddy Asam",
-  profile: '/image/png/placeholder.png',
+  profile: '/image/profile.png',
   designation: "Java Full Stack Developer & DevOps Engineer",
   description: "Java Full-Stack & DevOps Engineer skilled in Spring frameworks and the modern Java ecosystem. I build scalable backends, clean APIs, and cloud-ready applications with solid CI/CD ⚙️, Docker 🐳, Kubernetes ☸️, and automation practices. I love solving problems and creating meaningful, high-impact tech 🚀.",
   email: 'programmer143143@gmail.com',
