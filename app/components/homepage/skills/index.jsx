@@ -36,7 +36,14 @@ function Skills() {
           play={true}
           direction="left"
         >
-          {skillsData.map((skill, id) => (
+          {skillsData.map((skill, id) => {
+            // #region agent log
+            const skillImg = skillsImage(skill);
+            if (!skillImg) {
+              fetch('http://127.0.0.1:7242/ingest/728e554a-06a8-45ca-b3cb-11aa91a489fb',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'skills/index.jsx:39',message:'Missing skill image',data:{skill:skill,skillId:skill.toLowerCase()},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+            }
+            // #endregion
+            return (
             <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
               key={id}>
               <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
@@ -47,13 +54,19 @@ function Skills() {
                 </div>
                 <div className="flex flex-col items-center justify-center gap-3 p-6">
                   <div className="h-8 sm:h-10">
-                    <Image
-                      src={skillsImage(skill)?.src}
-                      alt={skill}
-                      width={40}
-                      height={40}
-                      className="h-full w-auto rounded-lg"
-                    />
+                    {skillImg ? (
+                      <Image
+                        src={skillImg.src}
+                        alt={skill}
+                        width={40}
+                        height={40}
+                        className="h-full w-auto rounded-lg"
+                      />
+                    ) : (
+                      <div className="h-full w-full flex items-center justify-center bg-gray-700 rounded-lg text-xs text-gray-400">
+                        No Icon
+                      </div>
+                    )}
                   </div>
                   <p className="text-white text-sm sm:text-lg">
                     {skill}
@@ -61,7 +74,7 @@ function Skills() {
                 </div>
               </div>
             </div>
-          ))}
+          )})}
         </Marquee>
       </div>
     </div>

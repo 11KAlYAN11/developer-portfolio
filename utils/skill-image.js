@@ -86,7 +86,7 @@ import fastapi from '../app/assets/svg/skills/fastapi.svg'
 
 
 export const skillsImage = (skill) => {
-  const skillID = skill.toLowerCase();
+  const skillID = skill.toLowerCase().replace(/\s+/g, ' ').trim();
   switch (skillID) {
     case 'gcp':
       return gcp;
@@ -254,6 +254,58 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    // Additional mappings for missing skills
+    case 'spring boot':
+      return java;
+    case 'spring security':
+      return java;
+    case 'spring mvc':
+      return java;
+    case 'material-ui':
+    case 'material ui':
+      return materialui;
+    case 'jdbc':
+      return java;
+    case 'jpa/hibernate':
+    case 'jpa':
+    case 'hibernate':
+      return java;
+    case 'restful apis':
+    case 'restful api':
+      return javascript;
+    case 'node.js':
+    case 'nodejs':
+    case 'node js':
+      return javascript;
+    case 'express.js':
+    case 'expressjs':
+    case 'express js':
+      return javascript;
+    case 'shell scripting':
+      return linux;
+    case 'ci/cd':
+      return docker;
+    case 'google cloud':
+      return gcp;
+    case 'vercel':
+      return nextJS;
+    case 'netlify':
+      return nextJS;
+    case 'cloudflare':
+      return nextJS;
+    case 'jwt':
+      return javascript;
+    case 'oauth':
+      return javascript;
+    case 'google gemini ai':
+    case 'gemini ai':
+      return python;
+    case 'langgraph':
+      return python;
+    case 'nlp':
+      return python;
+    case 'ai agents':
+      return python;
     default:
       break;
   }

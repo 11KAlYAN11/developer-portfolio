@@ -13,9 +13,6 @@ export const metadata = {
   title: "Portfolio of Asam Pavan Kumar Reddy - Full Stack Developer",
   description:
     "This is the portfolio of Asam Pavan Kumar Reddy, a passionate full-stack developer with expertise in Java, Spring Boot, and modern web technologies.",
-  icons: {
-    icon: "/favicon.svg",
-  },
 };
 
 export default function RootLayout({ children }) {
