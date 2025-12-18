@@ -77,12 +77,15 @@ import wordpress from '../app/assets/svg/skills/wordpress.svg';
 import pandas from '../app/assets/svg/skills/pandas.svg';
 import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
 import dotnet from '../app/assets/svg/skills/dotnet.svg';
-import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
-import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
-import linux from '../app/assets/svg/skills/linux.svg'
-import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
-import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
+import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg';
+import kubernetes from '../app/assets/svg/skills/kubernetes.svg';
+import linux from '../app/assets/svg/skills/linux.svg';
+import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg';
+import fastapi from '../app/assets/svg/skills/fastapi.svg';
+import jenkins from '../app/assets/svg/skills/jenkins.svg';
+import grafana from '../app/assets/svg/skills/grafana.svg';
+import salesforce from '../app/assets/svg/skills/salesforce.svg';
+import apex from '../app/assets/svg/skills/apex.svg';
 
 
 export const skillsImage = (skill) => {
@@ -245,7 +248,7 @@ export const skillsImage = (skill) => {
     case '.net':
       return dotnet;
     case '.net core':
-      return dotnetcore
+      return dotnetcore;
     case 'kubernetes':
       return kubernetes;
     case 'linux':
@@ -254,7 +257,16 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
-    // Additional mappings for missing skills
+    case 'jenkins':
+      return jenkins;
+    case 'grafana':
+      return grafana;
+    case 'salesforce':
+    case 'salesforce 2x':
+      return salesforce;
+    case 'apex':
+      return apex;
+    // Additional mappings for previously missing skills
     case 'spring boot':
       return java;
     case 'spring security':
