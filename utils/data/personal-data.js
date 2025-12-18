@@ -17,14 +17,14 @@ export const personalData = {
   heroCoder: {
     skills: [
       'Java',
+      'DevOps',
+      'C',
+      'Python',
       'Spring Boot',
       'Spring Security',
       'Spring MVC',
-      'React',
-      'Next JS',
-      'Docker',
-      'Kubernetes',
       'AWS',
+      "Salesforce 2x",
     ],
     hardWorker: true,
     quickLearner: true,
