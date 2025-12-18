@@ -1,7 +1,7 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor of Engineering (Electronics and Communication)",
+    title: "Bachelor of Engineering and Technology (B.Tech) (Electronics and Communication)",
     duration: "2019 - 2023",
     institution: 'RGMCET (Autonomous), Nandyal, AP, India, Grade: First Class with Distinction',
   },
