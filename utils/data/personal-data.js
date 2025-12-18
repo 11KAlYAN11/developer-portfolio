@@ -13,5 +13,22 @@ export const personalData = {
   stackOverflow: 'https://github.com/11KAlYAN11',
   leetcode: "https://leetcode.com/11KAlYAN11",
   devUsername: "11KAlYAN11",
-  resume: "https://github.com/11KAlYAN11"
-}
+  resume: "https://github.com/11KAlYAN11",
+  heroCoder: {
+    skills: [
+      'Java',
+      'Spring Boot',
+      'Spring Security',
+      'Spring MVC',
+      'React',
+      'Next JS',
+      'Docker',
+      'Kubernetes',
+      'AWS',
+    ],
+    hardWorker: true,
+    quickLearner: true,
+    problemSolver: true,
+    minSkillsForHire: 5,
+  },
+};
