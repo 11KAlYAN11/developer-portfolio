@@ -25,7 +25,7 @@
 
 ## Overview
 
-A professional portfolio template built with **Next.js 16**, **React 19**, and **Tailwind CSS 4**. Features a modern App Router architecture, server components, and data-driven configuration for easy customization.
+A professional portfolio template built with **Next.js 15**, **React 18**, and **Tailwind CSS 4**. Features a modern App Router architecture, server components, and data-driven configuration for easy customization.
 
 ---
 
@@ -45,7 +45,7 @@ A professional portfolio template built with **Next.js 16**, **React 19**, and *
 
 ## Features :sparkles:
 
-- ✅ **Cutting-Edge Tech Stack**: Built with Next.js 16, React 19, and Tailwind CSS 4
+- ✅ **Cutting-Edge Tech Stack**: Built with Next.js 15, React 18, and Tailwind CSS 4
 - ✅ **Fully Responsive**: Optimized for all devices and screen sizes
 - ✅ **SEO Optimized**: Better visibility on search engines with Next.js metadata API
 - ✅ **Blazing Fast Performance**: Leverages Next.js 16 server components and streaming
@@ -117,8 +117,8 @@ This portfolio leverages the latest Next.js 16 and React 19 capabilities:
 
 | Technology       | Version | Purpose                                   |
 | ---------------- | ------- | ----------------------------------------- |
-| **Next.js**      | 16.0.1  | React framework with App Router           |
-| **React**        | 19.2.0  | UI component library with latest features |
+| **Next.js**      | 15.x    | React framework with App Router           |
+| **React**        | 18.x    | UI component library with latest features |
 | **Tailwind CSS** | 4.x     | Utility-first CSS framework               |
 | **SASS**         | Latest  | CSS preprocessor                          |
 | **Lottie**       | Latest  | Lightweight animations                    |
